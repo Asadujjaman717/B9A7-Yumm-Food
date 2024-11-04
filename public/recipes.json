@@ -1,0 +1,48 @@
+[
+    {
+      "food_id": 1,  
+      "food_image": "https://i.ibb.co.com/7SyvHR9/Classic-Lasagna-14-scaled.jpg",
+      "food_title": "Classic Lasagna",
+      "food_description": "A rich and hearty Italian classic layered with pasta, cheese, and a savory meat sauce.",
+      "ingredients": ["Lasagna noodles", "Ground beef", "Marinara sauce", "Ricotta cheese", "Mozzarella cheese", "Parmesan cheese", "Garlic", "Onion", "Basil"],
+      "cooking_time": 80,
+      "calories": 650
+    },
+    {
+        "food_id": 2,
+      "food_image": "https://i.ibb.co.com/9sDRKY7/caesar-salad-recipe-06-40e70f549ba2489db09355abd62f79a9.jpg",
+      "food_title": "Caesar Salad",
+      "food_description": "Crisp romaine lettuce tossed with Caesar dressing, croutons, and Parmesan cheese.",
+      "ingredients": ["Romaine lettuce", "Caesar dressing", "Croutons", "Parmesan cheese", "Anchovy fillets", "Lemon juice", "Olive oil"],
+      "cooking_time": 15,
+      "calories": 220
+    },
+    {
+        "food_id": 3,
+      "food_image": "https://i.ibb.co.com/wz3Tv12/grilled-salmon.jpg",
+      "food_title": "Grilled Salmon",
+      "food_description": "Fresh salmon fillet grilled to perfection, served with a lemon-butter sauce and herbs.",
+      "ingredients": ["Salmon fillet", "Lemon", "Butter", "Garlic", "Rosemary", "Salt", "Pepper"],
+      "cooking_time": 25,
+      "calories": 350
+    },
+    {
+        "food_id": 4,
+      "food_image": "https://i.ibb.co.com/xHzTgM6/pizza.jpg",
+      "food_title": "Margherita Pizza",
+      "food_description": "A traditional Italian pizza topped with fresh mozzarella, basil, and tomatoes.",
+      "ingredients": ["Pizza dough", "Tomato sauce", "Mozzarella cheese", "Fresh basil", "Olive oil", "Salt"],
+      "cooking_time": 15,
+      "calories": 300
+    },
+    {
+        "food_id": 5,
+      "food_image": "https://i.ibb.co.com/8NLbq7B/chocolate-cake.jpg",
+      "food_title": "Chocolate Cake",
+      "food_description": "A rich and moist chocolate cake topped with creamy chocolate ganache.",
+      "ingredients": ["Flour", "Cocoa powder", "Sugar", "Butter", "Eggs", "Milk", "Vanilla extract", "Baking powder", "Chocolate"],
+      "cooking_time": 60,
+      "calories": 480
+    }
+  ]
+  
