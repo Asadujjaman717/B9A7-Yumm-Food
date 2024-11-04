@@ -9,44 +9,32 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   const [cooks, setCooks] = useState([]);
   const [currentlyCook, setCurrentlyCook] = useState([]);
+  const [clickedRecipes, setClickedRecipes] = useState([]); 
 
   const handleWantToCook = (recipe) => {
-    // Check if recipe already exists in the list
-    const exists = cooks.some((item) => item.id === recipe.id);
-    if (exists) {
-      // Show a toast notification if already exists
+    if(clickedRecipes.includes(recipe.food_id)) {
       toast.error("This recipe is already in your 'Want to cook' list!");
-    } else {
-      // Add recipe to the cooks list if it doesn't exist
+    } 
+    else {
       setCooks([...cooks, recipe]);
+      setClickedRecipes([...clickedRecipes, recipe.food_id]); 
     }
   };
+
   const handleCurrentCook = (recipe) => {
-    setCooks(cooks.filter((item) => item.id !== recipe.id));
+    setCooks(cooks.filter((item) => item.food_id !== recipe.food_id));
     setCurrentlyCook([...currentlyCook, recipe]);
+     setClickedRecipes(clickedRecipes.filter(id => id !== recipe.food_id));
   };
   
-  // const [cooks, setCooks] = useState([]);
-  // const [currentlyCook, setCurrentlyCook] = useState([]);
-
-  // const handleWantToCook = (recipe) => {
-  //   setCooks((prevCooks) => [...prevCooks, recipe]);
-  // };
-
-  // const handleCurrentCook = (recipe) => {
-  //   // Remove the selected recipe from 'cooks' and add it to 'currentlyCook'
-  //   setCooks((prevCooks) => prevCooks.filter((item) => item.food_id !== recipe.food_id));
-  //   setCurrentlyCook((prevCurrentlyCook) => [...prevCurrentlyCook, recipe]);
-  // };
   return (
     <>
-    <ToastContainer />
+      <ToastContainer />
       <Header></Header>
       <div className="text-center mb-20 max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold">Our Recipes</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius quia
-          omnis harum laborum ducimus laudantium!
+        Discover an exceptional cooking class tailored for you!
         </p>
       </div>
       <div className="flex max-w-7xl mx-auto">
