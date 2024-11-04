@@ -43,6 +43,15 @@
       "ingredients": ["Flour", "Cocoa powder", "Sugar", "Butter", "Eggs", "Milk", "Vanilla extract", "Baking powder", "Chocolate"],
       "cooking_time": 60,
       "calories": 480
-    }
+    },
+    {
+      "food_id": 6,
+      "food_image": "https://i.ibb.co.com/dcYQWX5/spaghetti-bolognese-93639-16x9.jpg",
+      "food_title": "Spaghetti Bolognese",
+      "food_description": "Classic Italian pasta with rich meat sauce and Parmesan cheese.",
+      "ingredients": ["Spaghetti", "Ground beef", "Onion", "Garlic", "Tomato sauce", "Olive oil", "Carrot", "Celery", "Parmesan cheese", "Salt", "Pepper", "Basil"],
+      "cooking_time": 45,
+      "calories": 520
+  }
   ]
   
